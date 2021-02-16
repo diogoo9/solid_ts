@@ -1,4 +1,4 @@
-import ShareButton from "./AbstractShareButton";
+import ShareButton from "./ShareButton";
 
 const shareButton = new ShareButton("http://www.youtube.com");
 shareButton.bind(".btn-twitter", "twitter");
