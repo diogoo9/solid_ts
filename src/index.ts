@@ -2,16 +2,17 @@ import ShareButtonTwitter from "./ShareButtonTwitter";
 import ShareButtonFacebook from "./ShareButtonFacebook";
 import ShareButtonLinkedin from "./ShareButtonLinkedin";
 import ShareButtonPrint from "./ShareButtonPrint";
+import AbstractShareButton from "./AbstractShareButton";
 
 
-const shareButtonTwitter = new ShareButtonTwitter(".btn-twitter","google.com");
-shareButtonTwitter.bind();
+const twitter: AbstractShareButton = new ShareButtonTwitter(".btn-twitter","google.com");
+twitter.bind();
 
-const shareButtonFacebook = new ShareButtonFacebook(".btn-facebook","google.com");
-shareButtonFacebook.bind();
+const facebook: AbstractShareButton = new ShareButtonFacebook(".btn-facebook","google.com");
+facebook.bind();
 
-const shareButtonLinkedin = new ShareButtonLinkedin(".btn-linkedin","google.com");
-shareButtonLinkedin.bind();
+const linkedin: AbstractShareButton = new ShareButtonLinkedin(".btn-linkedin","google.com");
+linkedin.bind();
 
 const shareButtonPrint = new ShareButtonPrint(".btn-print")
 shareButtonPrint.bind();
